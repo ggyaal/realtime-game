@@ -4,7 +4,8 @@
   "description": "realtime game",
   "main": "index.js",
   "scripts": {
-    "dev:server": "nodemon --exec babel-node src/server"
+    "dev:server": "nodemon --exec babel-node src/server --ignore assets/,static/",
+    "dev:assets": "gulp"
   },
   "repository": "git+https://github.com/ggyaal/realtime-game.git",
   "keywords": [],
@@ -23,9 +24,18 @@
     "@babel/core": "^7.14.3",
     "@babel/node": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
+    "babelify": "^10.0.0",
+    "del": "^6.0.0",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.0"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-bro": "^2.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.0",
+    "uglifyify": "^5.0.2"
   }
 }
