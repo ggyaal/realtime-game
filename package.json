@@ -11,7 +11,8 @@
     "build:assets": "yarn dev:assets && yarn copyAll",
     "build": "yarn build:server && yarn build:assets",
     "prebuild": "rm -rf build",
-    "start": "node build/server"
+    "start": "node build/server",
+    "prestart": "yarn build"
   },
   "repository": "git+https://github.com/ggyaal/realtime-game.git",
   "keywords": [],
