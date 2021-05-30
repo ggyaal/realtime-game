@@ -1,9 +1,10 @@
+require("dotenv").config();
 import { join } from "path";
 import express from "express";
 import socketIO from "socket.io";
 import socketController from "./socketController";
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const app = express();
 
 app.set("view engine", "pug");
