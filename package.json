@@ -24,6 +24,7 @@
   "dependencies": {
     "@babel/core": "^7.14.3",
     "@babel/cli": "^7.14.3",
+    "@babel/node": "^7.14.2",
     "@babel/preset-env": "^7.14.2",
     "express": "^4.17.1",
     "pug": "^3.0.2",
@@ -39,7 +40,6 @@
     "uglifyify": "^5.0.2"
   },
   "devDependencies": {
-    "@babel/node": "^7.14.2",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
