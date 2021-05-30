@@ -1,3 +1,4 @@
+
 doctype html
 html(lang="en")
     head
@@ -6,10 +7,10 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="/styles/styles.css")
         title realtime Game !
-    body 
-        h1 hello
-        form#form
-            input(type="text", name="message")
-            input(type="submit", value="send!")
+    body.loggedOut
+        h1 realTime games !
+        main
+            include partials/playground
+            include partials/chat
         script(src="/socket.io/socket.io.js")
         script(src="/js/main.js") 

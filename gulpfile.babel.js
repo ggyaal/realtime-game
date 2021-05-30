@@ -43,7 +43,10 @@ const js = () =>
     )
     .pipe(gulp.dest(paths.js.dest));
 
-const watchFiles = () => gulp.watch(paths.styles.watch, styles);
+const watchFiles = () => {
+  gulp.watch(paths.styles.watch, styles);
+  gulp.watch(paths.js.watch, js);
+};
 
 const dev = gulp.series([clean, styles, js, watchFiles]);
 

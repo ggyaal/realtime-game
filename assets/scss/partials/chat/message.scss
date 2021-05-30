@@ -1,0 +1,28 @@
+.chat-message {
+  margin-top: 10px;
+  width: 80%;
+  background-color: $green;
+  border-radius: 20px 20px 20px 0;
+  padding: 10px;
+  color: $white;
+  animation: chat-bubble-left 1s ease-in-out forwards;
+  &.own {
+    width: 80%;
+    background-color: $yellow;
+    border-radius: 20px 20px 0 20px;
+    padding: 10px;
+    color: $black;
+    animation: chat-bubble-right 1s ease-in-out forwards;
+    align-self: flex-end;
+  }
+}
+
+.chat-notification {
+  text-align: center;
+  background-color: $gray;
+  padding: 5px 0;
+  margin-top: 5px;
+  &::before {
+    content: "⚙️";
+  }
+}

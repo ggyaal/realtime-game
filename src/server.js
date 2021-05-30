@@ -1,6 +1,7 @@
 import { join } from "path";
 import express from "express";
 import socketIO from "socket.io";
+import socketController from "./socketController";
 
 const PORT = 4000;
 const app = express();
@@ -17,8 +18,4 @@ const server = app.listen(PORT, () =>
 
 const io = socketIO(server);
 
-io.on("connection", (socket) => {
-  socket.on("sendMessage", (data) =>
-    console.log(`DATA: ${JSON.stringify(data)}`)
-  );
-});
+io.on("connection", (socket) => socketController(socket));

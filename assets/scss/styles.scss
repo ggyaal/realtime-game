@@ -1,5 +1,11 @@
-$color: lightgray;
+@import url("https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap");
 
-body {
-  background-color: $color;
-}
+@import "config/_variables";
+@import "config/reset";
+
+@import "keyframes";
+
+@import "partials/playground/stadium";
+@import "partials/chat/main";
+
+@import "home";

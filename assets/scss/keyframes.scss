@@ -1,0 +1,38 @@
+@keyframes chat-bubble-left {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes chat-bubble-right {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes appearUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

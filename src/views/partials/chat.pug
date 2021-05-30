@@ -1,0 +1,15 @@
+include ../mixins/message
+
+.chat.loggedOut
+    .chat-column
+        .chat-log
+            .login
+                +message({name: "🧰BOT⚙️", message: "이름을 입력해야 시작합니다 !"})
+                form.login-form
+                    input(type="text", name="name", placeholder="당신의 이름은?")
+                    input(type="submit", value="확인")
+            ul#chat-ul
+    .chat-column
+        form#chat-form
+            input(type="text", name="message", placeholder="이름을 먼저 입력하세요 !", disabled)
+            input(type="submit", value="send!", disabled)

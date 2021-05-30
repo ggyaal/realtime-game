@@ -1,0 +1,33 @@
+body {
+  background-color: $black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Yeon Sung", cursive;
+  min-width: 1200px;
+}
+
+input {
+  font-family: "Yeon Sung", cursive;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(800px, 1fr) 400px;
+  padding: 10px;
+  width: 100%;
+  & > div {
+    height: 80vh;
+    padding: 20px;
+    box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    box-sizing: border-box;
+  }
+  box-sizing: border-box;
+}
